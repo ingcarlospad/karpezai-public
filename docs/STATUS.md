@@ -10,7 +10,8 @@
 | Voz natural | Experimental | Rama de trabajo local; no se anuncia completada |
 | M28/M29/M30 | Estado no consolidado aquí | Las notas locales y el checkout consultado describen estados distintos; no se publica un resumen de hitos completados |
 | Demo de este repositorio | Ejemplo educativo nuevo | Adaptadores falsos y datos sintéticos; no representa una sesión real del runtime |
-| KarpezVoz: detector de fin de turno | Código real seleccionado y publicado | Copia exacta del archivo local, hash cotejado y ocho pruebas aprobadas con niveles sintéticos; no hay demo de voz de extremo a extremo |
+| KarpezVoz: detector de fin de turno | Código real seleccionado y publicado | Copia exacta del archivo local, hash cotejado y ocho pruebas aprobadas con niveles sintéticos; estos tests no ejecutan ASR, LLM ni TTS |
+| KarpezVoz: sesión de audio | Prueba acotada de la aplicación con WAV sintético | Whisper, modelo local y Piper reales: saludo completado; una pregunta explicativa recibió un saludo genérico. No se probó micrófono ni navegador. [Video y registros](KARPEZVOZ-AUDIO-DEMO.md) |
 
 El README privado describe el bootstrap M0 y no basta para resumir el avance posterior. Las especificaciones son objetivos de aceptación, no certificados de cumplimiento. No se trasladan cifras de suites ni benchmarks sin ejecución y procedencia reproducible.
 

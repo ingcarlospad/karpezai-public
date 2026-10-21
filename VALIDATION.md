@@ -18,6 +18,8 @@ La primera ejecución detectó que Git había normalizado los saltos de línea d
 
 ## Ejemplo conceptual de continuidad
 
+La [sesión de audio documentada por separado](docs/KARPEZVOZ-AUDIO-DEMO.md) usa ASR, modelo y TTS reales, con entrada sintética. No forma parte de las ocho pruebas del detector ni constituye un benchmark. Conserva los dos intentos y sus resultados, incluido un fallo de seguimiento de pregunta.
+
 Se ejecutó `python demo.py`: Fake A recibe la primera tarea, Fake B recibe la continuación y observa un mensaje previo; se conservan cuatro eventos.
 
 Se ejecutó `python -m unittest -v`: tres pruebas aprobadas. Cubren conservación del historial y contexto al cambiar adaptador, rechazo de adaptador desconocido sin mutaciones y estabilidad del snapshot inmutable.

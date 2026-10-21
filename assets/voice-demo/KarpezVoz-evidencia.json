@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-21",
+  "scope": "One real application session; synthetic input WAV, not microphone capture",
+  "input_text_for_synthetic_audio": "Hola, ¿cómo te llamas?",
+  "history": [
+    {
+      "role": "user",
+      "content": "Hola, ¿cómo te llamas?"
+    },
+    {
+      "role": "assistant",
+      "content": "Me llamo Rose."
+    }
+  ],
+  "asr": "local whisper-cli",
+  "model": "qwen3.8:latest",
+  "tts": "local Piper",
+  "web_enabled": false,
+  "personal_glossary_enabled": false,
+  "event_types": [
+    "state",
+    "notice",
+    "final",
+    "state",
+    "answer_text",
+    "answer_text",
+    "answer_text",
+    "answer_text",
+    "answer_text",
+    "answer_done",
+    "speech",
+    "speech_done"
+  ],
+  "limitations": [
+    "No browser/microphone interaction tested",
+    "No real user audio",
+    "No latency benchmark",
+    "No web search or private Core integration"
+  ]
+}

@@ -17,6 +17,7 @@ KarpezAI explora cómo conservar contexto y estado de trabajo al cambiar modelos
 | [Ejemplo conceptual anterior](demo.py) | Adaptadores falsos; no es implementación del runtime |
 | [Trabajo con Codex](docs/CODEX.md) | Atribución honesta, dirección humana y evidencia disponible |
 | [Nota de construcción: un fallo real y su corrección](docs/build-notes/2026-10-21-source-bytes.md) | Diagnóstico de normalización de archivos, commits y ejecuciones públicas antes/después |
+| [KarpezVoz: sesión real de audio](docs/KARPEZVOZ-AUDIO-DEMO.md) | Video y audio: entrada sintética, Whisper, modelo local y Piper reales; incluye el límite observado en un primer intento |
 
 ## Ejecutar el componente real publicado
 

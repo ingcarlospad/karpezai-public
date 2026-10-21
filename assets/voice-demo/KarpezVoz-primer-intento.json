@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-21",
+  "scope": "One real application session; synthetic input WAV, not microphone capture",
+  "input_text_for_synthetic_audio": "En una frase, ¿qué hace un asistente de voz?",
+  "history": [
+    {
+      "role": "user",
+      "content": "en una frase que hace un asistente de voz."
+    },
+    {
+      "role": "assistant",
+      "content": "Aquí Rose, ¿en qué puedo ayudarte hoy?"
+    }
+  ],
+  "asr": "local whisper-cli",
+  "model": "qwen3.8:latest",
+  "tts": "local Piper",
+  "web_enabled": false,
+  "personal_glossary_enabled": false,
+  "event_types": [
+    "state",
+    "notice",
+    "final",
+    "state",
+    "answer_text",
+    "answer_text",
+    "answer_text",
+    "answer_text",
+    "answer_text",
+    "answer_text",
+    "answer_text",
+    "answer_text",
+    "answer_text",
+    "answer_text",
+    "answer_text",
+    "answer_done",
+    "speech",
+    "speech_done"
+  ],
+  "limitations": [
+    "No browser/microphone interaction tested",
+    "No real user audio",
+    "No latency benchmark",
+    "No web search or private Core integration"
+  ],
+  "observed_limitation": "The model returned a generic greeting instead of answering the explanatory question; this is not a successful question-answering test."
+}
