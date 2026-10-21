@@ -1,5 +1,7 @@
 # KarpezAI · Ingeniería de un runtime de agentes
 
+[![Pruebas del componente público](https://github.com/ingcarlospad/karpezai-public/actions/workflows/public-voice-sample.yml/badge.svg?branch=main)](https://github.com/ingcarlospad/karpezai-public/actions/workflows/public-voice-sample.yml)
+
 Proyecto técnico de Carlos Padilla / Karpeztec. **En desarrollo; runtime principal privado.** Este repositorio contiene documentación y una muestra de código real de KarpezVoz, derivado del trabajo de voz de KarpezAI. No es una distribución completa del runtime ni una afirmación de madurez comercial.
 
 KarpezAI explora cómo conservar contexto y estado de trabajo al cambiar modelos, proveedores y herramientas, con decisiones de permisos y evidencia verificable bajo control del runtime.
@@ -14,6 +16,7 @@ KarpezAI explora cómo conservar contexto y estado de trabajo al cambiar modelos
 | [Decisión de publicación del componente](docs/adr/0002-karpezvoz-source-sample.md) | Procedencia, revisión y alcance de lo publicado |
 | [Ejemplo conceptual anterior](demo.py) | Adaptadores falsos; no es implementación del runtime |
 | [Trabajo con Codex](docs/CODEX.md) | Atribución honesta, dirección humana y evidencia disponible |
+| [Nota de construcción: un fallo real y su corrección](docs/build-notes/2026-10-21-source-bytes.md) | Diagnóstico de normalización de archivos, commits y ejecuciones públicas antes/después |
 
 ## Ejecutar el componente real publicado
 

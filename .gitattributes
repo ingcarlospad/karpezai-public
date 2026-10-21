@@ -1,2 +1,2 @@
 # Preserve the original extracted source bytes for provenance verification.
-/examples/karpezvoz/turns.py -text
+/examples/karpezvoz/turns.py -text whitespace=cr-at-eol

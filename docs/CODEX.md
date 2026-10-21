@@ -16,7 +16,11 @@ Después, Carlos pidió aprovechar KarpezVoz. Codex seleccionó un componente re
 
 Para Bloom, Codex preparó una copia local aislada, una base nueva con datos ficticios y desactivó el asistente y los procesos periódicos en el entorno de demo. Comprobó creación de citas e ingresos y rechazo de solapamientos, además de ejecutar las trece pruebas existentes del piloto con Claude simulado y SQLite temporal. Esto verifica comportamientos acotados del código local, no una llamada real a Claude ni resultados comerciales.
 
+Después operó la interfaz de la copia en el navegador: creó otra cita ficticia, verificó su confirmación, revisó disponibilidad, ingresos y reporte, y guardó seis capturas públicas. Véase el [recorrido del producto](https://github.com/ingcarlospad/karpeztec-showcase/blob/main/docs/BLOOM-DEMO.md). No se anuncia un video continuo narrado.
+
 Esto demuestra un flujo de revisión y documentación con Codex. No demuestra que se haya depurado un defecto del runtime privado durante esta sesión.
+
+Sí hubo un fallo público de empaquetado durante esta preparación: la normalización de finales de línea rompió el hash de procedencia en CI. Codex lo diagnosticó, conservó los bytes originales con una regla específica de Git y comprobó el resultado. La [nota técnica con las ejecuciones y el commit](build-notes/2026-10-21-source-bytes.md) permite verificarlo sin acceso al código privado.
 
 ## Guía para publicar una próxima sesión real
 
