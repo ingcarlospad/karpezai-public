@@ -10,7 +10,8 @@
 | Voz natural | Experimental | Rama de trabajo local; no se anuncia completada |
 | M28/M29/M30 | Estado no consolidado aquí | Las notas locales y el checkout consultado describen estados distintos; no se publica un resumen de hitos completados |
 | Demo de este repositorio | Ejemplo educativo nuevo | Adaptadores falsos y datos sintéticos; no representa una sesión real del runtime |
+| KarpezVoz: detector de fin de turno | Código real seleccionado y publicado | Copia exacta del archivo local, hash cotejado y ocho pruebas aprobadas con niveles sintéticos; no hay demo de voz de extremo a extremo |
 
 El README privado describe el bootstrap M0 y no basta para resumir el avance posterior. Las especificaciones son objetivos de aceptación, no certificados de cumplimiento. No se trasladan cifras de suites ni benchmarks sin ejecución y procedencia reproducible.
 
-Pendiente para ampliar evidencia pública: exportar un caso real sanitizado con objetivo, revisión humana, cambio concreto, prueba de regresión y resultado reproducible. También falta una demostración pública del runtime privado libre de información confidencial.
+Pendiente para ampliar evidencia pública: exportar un caso real sanitizado de depuración con objetivo, revisión humana, cambio concreto, prueba de regresión y resultado reproducible. La muestra de KarpezVoz ya aporta código real verificable, pero aún falta una demostración pública del runtime completo libre de información confidencial.

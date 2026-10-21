@@ -1,6 +1,6 @@
 # KarpezAI · Ingeniería de un runtime de agentes
 
-Proyecto técnico de Carlos Padilla / Karpeztec. **En desarrollo; implementación privada.** Este repositorio público contiene documentación y un ejemplo educativo independiente. No es una distribución del runtime ni una afirmación de madurez comercial.
+Proyecto técnico de Carlos Padilla / Karpeztec. **En desarrollo; runtime principal privado.** Este repositorio contiene documentación y una muestra de código real de KarpezVoz, derivado del trabajo de voz de KarpezAI. No es una distribución completa del runtime ni una afirmación de madurez comercial.
 
 KarpezAI explora cómo conservar contexto y estado de trabajo al cambiar modelos, proveedores y herramientas, con decisiones de permisos y evidencia verificable bajo control del runtime.
 
@@ -10,19 +10,21 @@ KarpezAI explora cómo conservar contexto y estado de trabajo al cambiar modelos
 | [Arquitectura](docs/ARCHITECTURE.md) | Separación entre Core, adaptadores y herramientas |
 | [Decisiones](docs/adr/0001-public-boundaries.md) | Límites de publicación y continuidad |
 | [Especificación educativa](docs/spec/demo.md) | Contrato reproducible con datos sintéticos |
-| [Demo](demo.py) y [pruebas](test_demo.py) | Ejemplo nuevo, sin dependencias ni proveedores reales |
+| [KarpezVoz: código real, demo y pruebas](examples/karpezvoz/README.md) | Detector original de fin de turno, sin dependencias; entradas sintéticas |
+| [Decisión de publicación del componente](docs/adr/0002-karpezvoz-source-sample.md) | Procedencia, revisión y alcance de lo publicado |
+| [Ejemplo conceptual anterior](demo.py) | Adaptadores falsos; no es implementación del runtime |
 | [Trabajo con Codex](docs/CODEX.md) | Atribución honesta, dirección humana y evidencia disponible |
 
-## Ejecutar el ejemplo público
+## Ejecutar el componente real publicado
 
 Python 3.12 o superior. Desde esta carpeta:
 
 ```sh
-python demo.py
-python -m unittest -v
+python examples/karpezvoz/demo.py
+python -m unittest discover -s examples/karpezvoz/tests -v
 ```
 
-No requiere claves, red, modelos, bases de datos ni cuentas. Prueba la idea de conservar un historial al alternar dos adaptadores falsos. **No ejecuta ni valida el Core privado de KarpezAI.**
+No requiere claves, red, modelos, bases de datos, micrófono ni cuentas. Ejecuta el detector real sobre secuencias artificiales: cierre por silencio, descarte de sonido breve y límite de duración. **No valida ASR, LLM, TTS ni el Core privado.** Consulte [los resultados y sus límites](VALIDATION.md).
 
 ## Dos proyectos, evidencias diferentes
 

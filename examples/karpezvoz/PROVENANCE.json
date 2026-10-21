@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-21",
+  "source_project": "KarpezVoz, local installation owned by Carlos",
+  "source_component": "karpezvoz/turns.py",
+  "published_component": "examples/karpezvoz/turns.py",
+  "transformation": "Byte-for-byte copy; no changes",
+  "sha256": "def85ddf48a3d4726a894f470cdabe9a23f6f858ef3385603a88485a603bb0f4",
+  "source_relationship": "KarpezVoz source documentation identifies this as the KarpezAI M23 conversation reference detector",
+  "historical_codex_authorship_verified": false,
+  "public_tests_and_demo": "New work prepared with Codex; synthetic input frames"
+}

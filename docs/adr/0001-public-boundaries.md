@@ -2,6 +2,8 @@
 
 Fecha: 2026-10-21. Estado: decisión para esta documentación pública.
 
+Ampliación posterior: [ADR 0002](0002-karpezvoz-source-sample.md) autoriza la muestra seleccionada de KarpezVoz. El runtime principal y su historial siguen privados.
+
 ## Contexto
 
 Existe un repositorio privado con implementación, historia de desarrollo y material operativo. Publicarlo completo no es necesario para explicar el proyecto y puede exponer información o propiedad intelectual.
